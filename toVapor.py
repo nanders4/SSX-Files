@@ -15,6 +15,10 @@ import netCDF4 as n4
 from docopt import docopt
 import matplotlib.pyplot as plt
 
+'''Clearly, this only works on MacOS. To activate VAPOR environment on windows, see
+https://www.vapor.ucar.edu/docs/vapor-installation/vapor-windows-binary-installation.
+Moreover, the Dedalus path is specific to this Swarthmore Physics department laptop
+"Manjit's MacBook Pro". Change these variables as needed.'''
 
 PYTHONPATH = '/Users/dedalus/dedalus/bin/activate'
 VAPORPATH = '/Applications/VAPOR/VAPOR.app/Contents/MacOS/vapor-setup.sh'
