@@ -46,4 +46,11 @@ fileOutName is the name (no extension) of the resultant file (eg. "ssx")
 dimensionRatio is an optional argument specifying the desired visualized dimensions. Syntax: "minZ:minY:minX:maxZ:maxY:maxX"
 
 FOR HELP regarding getting data into VAPOR more generally:
-see https://groups.google.com/forum/#!topic/dedalus-users/2tS6PS-zKLM
+see Eric Hester's comment here https://groups.google.com/forum/#!topic/dedalus-users/2tS6PS-zKLM
+
+===particlePuncture.py===
+Makes a puncture plot of a particle trajectory given information about where to take the slice, and with what precision.
+
+===particleStaticFieldSpheromak.py===
+Produces netCDF file with data about particle orbit and fields. Use ncdfvdfcreate and ncdf2vdf to make VAPOR-readable vdf files.
+For more info, see the above link.
