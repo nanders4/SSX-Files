@@ -1,4 +1,4 @@
-===dedalusBatch.job=== 
+===dedalusBatch.job===
 A batch script used on Bridges. Calls SSX_model_A.py to simulate spheromak evolution, then calls merge1.py and merge2.py to merge data together into an h5 file  named merged.h5.
 
 ===mergeBatch.job===
@@ -36,7 +36,7 @@ joint_path is file name of finished, merged file
 set_path is a directory containing files to be merged
 
 ===toVapor.py===
-Script to create a VAPOR-readable .vdf file from an h5 file produced by Dedalus.
+Script to create a VAPOR-readable .vdf file from an h5 file produced by Dedalus. Uses netCDF as an intermediate format.
 Pulls all variables output by Dedalus and captures time evolution if present.
 Usage:
     toVapor.py <fileIn> <fileOutName> [<dimensionRatio>]
