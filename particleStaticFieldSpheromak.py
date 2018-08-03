@@ -62,7 +62,7 @@ def dataToMesh(dataArray, min, max, meshPoints):
         outArray[i] = int(round((meshPoints-1)*(dataArray[i]-min)/dimSize))
     return outArray
 
-#take in data
+#take in data. exactly how you should do this depends on the shape of your file.
 file = h5py.File('analytical_data.h5', 'r')
 data = file['r'][10]
 print("Data shape: ", data.shape)
@@ -76,9 +76,9 @@ timeCompresssion = 1
 totalTimes = data.shape[0]
 
 #set grid resolution (directly effects run time)
-nx = 250
-ny = 250
-nz = 250
+nx = 100
+ny = 100
+nz = 100
 nt = int(round(totalTimes*timeCompresssion))
 
 #set dimension bounds
