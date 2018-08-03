@@ -54,3 +54,6 @@ Makes a puncture plot of a particle trajectory given information about where to 
 ===particleStaticFieldSpheromak.py===
 Produces netCDF file with data about particle orbit and fields. Use ncdfvdfcreate and ncdf2vdf to make VAPOR-readable vdf files.
 For more info, see the above link.
+
+===cluster_install.sh===
+Script to install Dedalus on Bridges. Trying to do it manually is truly a pain.
